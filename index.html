@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Text Editor</title>
+    <script src="main.js"></script>
+    <script src="wordCount.js"></script>
+    <div class="navbar">
+        <a href="index.html">Simpad - Simple Online Text Editor</a>
+        <a href="test.html" rel="noopener noreferrer" id="links" target="_blank">Projects</a>
+    </div>
+    <div class="textEditor">
+        <form action="">
+            <input type="text" name="fileName" id="filename" placeholder="Filename...">
+            <br><br>
+            <textarea name="" id="txtEditor" cols="200" rows="18" placeholder="Text here..."
+                onkeyup="wordcount(this.value)"></textarea>
+            <label for="">Words :</label>
+            <input type="text" id="wordcnt" readonly disabled><br><br>
+            <button id="downloadBtn" onclick="saveFile()">DOWNLOAD FILE</button>
+        </form>
+    </div>
+    <div id="page-info">
+        <h3>Why Simpad?</h3>
+        <h4>Unluckily, if you don't have Notepad or Text Editor in your device, you can use Simpad Online. BTW, this is
+            a College Project.<br>Created by
+            <a href="test.html" target="_blank" rel="noopener noreferrer">Rohan Kiratsata</a>
+        </h4>
+        <h3>Also try :</h3>
+        <h4>
+            <a href="test.html" target="_blank" rel="noopener noreferrer">Programmer Calculator</a>
+        </h4>
+    </div>
+</head>
+
+<body>
+
+</body>
+
+</html>
